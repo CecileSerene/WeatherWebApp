@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+ 
+<html lang="fr">
+   <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="/meteo/styles.css"/>
+      <script type="text/javascript" src="/meteo/app.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <title>Recherche</title>
+   </head>
+ 
+   <body onload="initConfig();">
+
+      <!--Navigation bar-->
+ 		<ul class="navbar">
+         <li class="onglet"><a href="/meteo/home.html" >Prévisions</a></li>
+         <li class="onglet"><a href="/meteo/configurations.html" id="active">Recherche avancée</a></li>
+         <li class="onglet"><a href="/meteo/informations.html" >Contact</a></li>
+      </ul>
+
+      <div class="center">
+      <fieldset>
+      <legend>Recherche avancée</legend>
+               
+               <br>
+               <br>
+               
+               <form class="pure-form" action="/set" method="get">
+
+                  <label>Ville française</label>
+               <input type="text" name="location"></input>
+
+               <br>
+               <br>
+
+                  <p class="conf-title">Températures :</p>
+                  <input type="radio" name="temperature" id="Celsius" value="0"></input>
+                  <label>Celsius</label>
+                  <input type="radio" name="temperature" id="Farenheit" value="1"></input>
+                  <label>Farenheit</label>
+                  <input type="radio" name="temperature" id="Kelvin" value="2"></input>
+                  <label>Kelvin</label>
+
+                  <br>
+                  <br>
+
+
+               <p class="conf-title">Vent :</p>
+                  <input type="radio" name="vent" id="kmh" value="0"></input>
+                  <label>Km/h</label>
+                  <input type="radio" name="vent" id="ms" value="1"></input>
+                  <label>m/s</label>
+
+                  <br>
+                  <br>
+
+               <p class="conf-title">Pression :</p>
+                  <input type="radio" name="pression" id="bar" value="0"></input>
+                  <label>bar</label>
+                  <input type="radio" name="pression" id="hPa" value="1"></input>
+                  <label>hPa</label>
+
+                  <br>
+                  <br>
+                  <input type="checkbox" name="ephemeride" checked="false"></input>
+                  <label>Soleil</label>
+      <input class="button" type="submit" value="Appliquer" >
+               </form>
+         
+      </fieldset>
+
+      <br>
+      </div>
+ 
+   </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+ 
+<html lang="fr">
+   <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="/meteo/styles.css"/>
+      <script type="text/javascript" src="/meteo/app.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+      <title>Météo</title>
+   </head>
+ 
+   <body onload="toutLancer()">
+
+   		<!--Navigation bar-->
+ 		<ul class="navbar">
+			<li class="onglet"><a href="/meteo/home.html" id="active">Prévisions</a></li>
+			<li class="onglet"><a href="/meteo/configurations.html">Recherche avancée</a></li>
+			<li class="onglet"><a href="/meteo/informations.html" >Contact</a></li>
+		 </ul>
+
+ 		<!--Titres-->
+ 		<h1>Prévisions météorologiques</h1>
+ 			<h2><span id="ville">Ville</span></h2>
+
+
+ 				<!--On réparti la page en deux sections-->
+ 				<div class="boxes">
+ 					<div class="right">		
+ 						<p id="descriptionVille">Description</p>
+ 					</div>
+
+ 					<div class="left">
+ 						<p class="contenant" id="temperature">
+ 							<span class="contenu">NaN</span><span class="unite">°C</span>
+ 						</p>
+ 						<div class="boxes">
+ 							<!--Les données de la météo-->
+			 				<ul class="donnees left">
+			 					<li class="contenant" id="temps"> 
+			 						<div> 
+			 							<img src="/meteo/data/cloudy.png" 
+			 								width="30" 
+			 								alt="weathericon"
+			 								class="item"/>
+			 								<span class="contenu" id="couverture">NaN</span>
+			 						</div>
+			 					</li>
+			 					<li class="contenant" id="vent">
+			 						<div>
+			 							<img src="/meteo/data/wind.png" 
+			 								width="30" 
+			 								alt="weathericon"
+			 								class="item"/> 
+			 								<span class="contenu">NaN</span> <span class="unite">km/h</span>
+			 						</div>
+			 					</li>
+							</ul>
+
+							<!--Les données des éphémérides-->
+							<ul class="donnees right">
+								<li class="contenant" id="pression">
+			 						<div>
+			 							<img src="/meteo/data/pression.png" 
+			 								width="30" 
+			 								alt="weathericon"
+			 								class="item"/>
+			 								<span class="contenu">NaN</span><span class="unite">bar</span>
+			 						</div>
+			 					</li>
+	 							<li class="contenant" id="soleil">
+	 								<div> 
+			 							<img src="/meteo/data/sun.png" 
+			 								width="30" 
+			 								alt="weathericon"
+			 								class="item"/>
+			 								<span class="lever">NaN</span>-<span class="coucher">NaN</span>
+			 						</div>
+			 					</li>
+	 						</ul>
+						</div>
+					</div>
+ 				</div>
+
+ 			 <div id="uneJoliCarte" style="margin: 0 auto; width: 1000px; height: 500px;"></div>
+   </body>
+</html>

@@ -1,0 +1,149 @@
+body, html {
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: Verdana, Geneva, sans-serif;
+
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: normal;
+	}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal;
+	font-variant: small-caps;
+}
+
+
+ul.navbar {
+	text-align: center;
+	text-transform: uppercase;
+	list-style-type: none;
+    margin-top: 0.8em;
+}
+
+li.onglet {
+	display: inline;
+}
+
+li.onglet > a {
+	text-decoration: none;
+	color: grey;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+li.onglet > a:hover {
+	border-bottom: 3px solid #d7869c;
+}
+
+#active {
+	border-bottom: 3px solid #a50036;
+}
+
+.boxes {
+	display: grid;
+	grid-gap: 30px;
+}
+
+.right {
+	grid-column: 2;
+	grid-row: 1;
+	text-align: left;
+}
+
+.left {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+p {
+	text-align: justify;
+}
+
+#temperature {
+	font-size: 40px;
+	color: #b21537;
+	text-align: center;
+	padding-bottom:30px;
+	border-bottom: 3px solid #a50036;
+}
+
+.donnees {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+
+
+.donnees > li {
+	text-decoration: none;
+	margin: 0px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+
+img.item {
+	vertical-align: middle;
+	text-align: center;
+	padding-right: 5px;
+}
+
+
+#UneJoliCarte {
+	margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+}
+
+fieldset {
+ padding:20px 20px 20px 20px;
+ margin: auto;
+ margin-bottom: 20px;
+ border:1px solid #a50036;
+ display: inline-block;
+ text-align: left;
+ }
+
+ legend {
+ 	text-align: center;
+ }
+
+.conf-title {
+ 	display: inline;
+ 	margin-top: 20px;
+ }
+
+.button {
+ 	background-color: #d7869c;
+ 	padding: 15px;
+ 	font-size: 20px;
+ 	border:none;
+ 	color: black;
+ }
+
+ .button:hover {
+ 	background-color: #a50036;
+ 	color: grey;
+ }
+
+ h3 {
+ 	font-variant: small-caps;
+ 	font-weight: normal;
+ 	text-align: left;
+ }
+
+ a {
+ 	text-align: left;
+ }
+
+ div.center {
+ 	text-align: center;
+ }
+
+
